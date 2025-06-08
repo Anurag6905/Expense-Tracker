@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+.Main-App {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    /* background-color: black; */
+}
+
+.Heading {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+    color: aliceblue;
+    margin-bottom: 2rem;
+    font-family: 'Dancing Script';
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(46, 46, 46, 0.8);
+    letter-spacing: 0.5rem;
+    transform: scaleX(1);
+    transform: scaleY(1);
+}
+
+.info {
+    width: 100%;
+    height: auto;
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: rgb(166, 237, 43);
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.Input-Container {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 4rem;
+}
+
+.title, .amount, .Date{
+    width: 15%;
+    height: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 0px;
+    border: 2px solid rgb(67, 67, 67);
+    transition: ease-in-out 0.6s;
+    box-shadow: 0.3rem 0.3rem 0rem rgba(209, 209, 209, 0.9);
+}
+
+.title:focus,.amount:focus,.Date:focus {
+    box-shadow: 0 0 0;
+}
+
+.Category-bar {
+    width: 18%;
+    height: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 0px;
+    border: 2px solid rgb(67, 67, 67);
+    transition: ease-in-out 0.6s;
+    box-shadow: 0.3rem 0.3rem 0rem rgba(209, 209, 209, 0.9);
+}
+
+.Category-bar:focus, .Category:focus {
+    box-shadow: 0 0 0;
+}
+
+.Category {
+    width: 15%;
+    height: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 0px;
+    border: 2px solid rgb(67, 67, 67);
+    transition: ease-in-out 0.6s;
+    box-shadow: 0.3rem 0.3rem 0rem rgba(209, 209, 209, 0.9);
+}
+
+.Add {
+    width: 10%;
+    height: auto;
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: rgb(166, 237, 43);
+    color: black;
+    border-radius: 0px;
+    border: 2px solid rgb(49, 49, 49);
+    box-shadow: 0.3rem 0.3rem 0rem rgba(162, 162, 162, 0.9);
+    margin-left: 40px;
+    transition: ease-in-out 0.8s ;
+}
+
+.Add:hover {
+    cursor: pointer;
+    color: rgb(140, 213, 13);
+    background-color: black;
+    box-shadow: 0 0 0;
+    border: 2px solid rgb(84, 84, 84);
+}
+
+.Display-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    height: auto;
+    gap: 40px;
+}
+
+.Filter-Container {
+    width: 100%;
+    padding: 2rem;
+    height: auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Heading2 {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    color: rgb(140, 213, 13);
+    margin-top: 2rem;
+    padding-bottom: 0;
+}
+
+.expense-card {
+    width: 90%;
+    height: auto;
+    padding: 0.7rem;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    border: 2px solid rgb(66, 66, 66);
+    box-shadow: 0.4rem 0.4rem 0rem rgba(162, 162, 162, 0.8);
+    transition: ease-in-out 0.2s;
+}
+
+.expense-card:hover {
+    scale: 1.02;
+    cursor: pointer;
+}
+
+.expense-title,.expense-amount,.expense-category,.expense-date {
+    width: 15%;
+    height: auto;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: rgb(166, 237, 43);
+}
+
+.expense-category,.expense-date {
+    width: 25%;
+}
+
+.Delete {
+    width: 60%;
+    height: auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+    transition: ease-in-out 0.4s ;
+    background-color: rgb(188, 41, 18);
+    box-shadow: 0.2rem 0.2rem 0rem rgba(0, 0, 0, 0.9);
+    color: black;
+    font-weight: 800;
+    border: 2px solid rgb(29, 29, 29);
+    transition: ease-in-out 0.5s ;
+}
+
+.Delete-div {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Delete:hover {
+    cursor: pointer;
+    /* color: rgb(188, 41, 18);
+    background-color: black; */
+    background-color: aliceblue;
+} 
+
+.Total-Amount {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(166, 237, 43);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.white{
+    color: aliceblue;
+}
+
+.Heading3 {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 800;
+    color: rgb(140, 213, 13);
+    margin-top: 4rem;
+}
+
+.Data-Container {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.chart-boxes {
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 90%;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.chart-boxes canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.chart-boxes:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.chart-box {
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 40%;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+  
+.chart-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 25px rgba(210, 210, 210, 0.395);
+    cursor: pointer;
+}
+  
+.chart-box canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media (max-width: 950px){
+    .Add {
+        width: 20%;
+        margin: 0;
+    }
+
+    .Input-Container {
+        gap: 40px;
+    }
+
+    .title,.amount,.Category,.Category-bar,.Date {
+        width: 40%;
+        font-size: 0.9rem;
+    }
+
+    .expense-card {
+        scale: (1);
+        padding: 0.5rem;
+    }
+
+    .expense-title,.expense-category,.expense-amount,.expense-date {
+        font-size: 0.8rem;
+        width: 25%;
+    }
+
+    .expense-category,.expense-date {
+        width: 29%;
+    }
+
+    .Delete-div {
+        width: 30%;
+    }
+
+    .Delete {
+        width: auto;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px){
+
+    .expense-card {
+        scale: 1;
+        padding: 0.4rem;
+        gap: 15px;
+    }
+
+    .expense-title,.expense-category,.expense-date,.expense-amount {
+        font-size: 0.7rem;
+        width: 25%;
+    }
+
+
+    .expense-category,.expense-date {
+        width: 29%;
+    }
+
+    .Delete {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    .chart-box {
+        width: 90% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chart-box canvas{
+        width: 100% !important;
+    }
+
+    .chart-boxes {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chart-boxes canvas{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 620px) {
+    .chart-box {
+        padding: 0;
+    }
+
+    .chart-boxes {
+        padding: 0;
+    }
+
+    .Data-Container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .expense-card {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .expense-title,.expense-category,.expense-date,.expense-amount {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Delete-div {
+        width: 100%;
+    }
+
+    .expense-category,.expense-date {
+        width: 100%;
+    }
+
+    .Delete {
+        margin-top: 0.2rem;
+        text-align: center;
+        width: 30%;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .Delete {
+        width: 50%;
+    }
+
+    .Add {
+        width: 40%;
+        margin: 0;
+    }
+
+    .Input-Container {
+        gap: 40px;
+    }
+
+    .title,.amount,.Category,.Category-bar,.Date {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .Filter-Container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
