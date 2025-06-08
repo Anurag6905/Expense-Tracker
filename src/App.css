@@ -11,7 +11,7 @@
 }
 
 body {
-    background: url("bg7.jpg");
+    background: url("../public/bg7.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
